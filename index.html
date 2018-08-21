@@ -2,17 +2,17 @@
 <script>
   function passWord() {
     var testV = 1;
-    var pass1 = prompt("Please Enter Your Password", "'Nobody said it was easy, No one ever said it would be this hard, ________________'");
+    var pass1 = prompt("I don't open at the close. I unlock at the start.", "");
     while (testV < 100) {
       if (!pass1) 
         history.go(-1);
       if (pass1.toLowerCase() == "joinpenncss") {
-        alert('Congratulations! Please hit OK to proceed.');
+        alert('Access Granted! Please hit OK to proceed.');
         window.open("https://carlsonkellie.github.io/escaped/");
         break;
       } 
       testV+=1;
-      var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Nobody said it was easy, No one ever said it would be this hard, _______________________');
+      var pass1 = prompt("Access Denied. Password Incorrect, Please Try Again. I don't open at the close. I unlock at the start.","");
     }
     if (pass1.toLowerCase()!="password" & testV ==100) 
       history.go(-1);
